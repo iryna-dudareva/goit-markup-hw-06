@@ -70,13 +70,12 @@ button{
 
 .first-title {
     font-weight: 700;
-    font-size: 56px;
-    line-height: 107%;
+    font-size: 36px;
+    line-height: 111%;
     letter-spacing: 0.02em;
-    margin-bottom: 48px;
     text-align: center;
-    max-width: 496px;
-    margin: 0 auto;
+    max-width: 216px;
+    margin: 0 auto 72px auto;
 }
 
 .second-title {
@@ -115,6 +114,7 @@ button{
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);
+        padding: 16px 0 16px 0;
 }
 
 .header-container {
@@ -312,12 +312,19 @@ button{
     margin-bottom: auto;
 }
 
+.nav-menu-list.mob-menu-navlist-item{
+    margin-bottom: 40px;
+}
+
+.mob-menu-navlist-item{
+    margin-bottom: 40px;
+}
+
 .nav-menu-list .nav-menu-link{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    gap: 40px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -344,6 +351,7 @@ button{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #434455;
+    font-style: normal;
 }
 
 .menu-address-link.current {
@@ -396,8 +404,8 @@ button{
     background-size: cover;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     color: #FFFFFF;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding-top: 72px;
+    padding-bottom: 72px;  
     max-width: 320px;
     margin: 0 auto;
 }
@@ -416,7 +424,7 @@ button{
     border-radius: 4px;
     display: block;
     justify-content: center;
-    margin: 48px auto;
+    margin: 0 auto;
     min-width: 169px;
     height: 56px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -430,6 +438,7 @@ button{
                 rgba(46, 47, 66, 0.7)),
             url("../images/hero-mobile-bg2x-min.jpg");
     }
+
 }
 
 
@@ -445,7 +454,19 @@ button{
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
                 url("../images/hero-tablet-bg1x-min.jpg");
+
+                        padding-top: 112px;
+                        padding-bottom: 112px;
+
         }
+
+                .first-title {
+                    font-size: 56px;
+                    line-height: 107%;
+                    margin-bottom: 36px;
+                    max-width: 496px;
+                }
+                
 
     @media screen and (min-resolution: 192dpi) {
             .hero {
@@ -467,7 +488,17 @@ button{
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
                 url("../images/hero-pc-bg1x-min.jpg");
+
+                    padding-top: 188px;
+                    padding-bottom: 188px;
         }
+
+                .first-title {
+                    font-size: 56px;
+                    line-height: 107%;
+                    margin-bottom: 48px;
+                }
+                
 
      @media screen and (min-resolution: 192dpi) {
             .hero {
@@ -495,21 +526,18 @@ button{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 24px;
+    gap: 72px;
     
 
 }
 
-.manifestos-item {
-    min-width: 288px;
-    min-height: 120px;
-}
+
 
 .strategy-box{
     display: none;
 }
 
-.list-title {              
+.list-title.strategy {              
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -544,6 +572,11 @@ button{
             flex-basis: calc((100% - 24px) / 2);  
         }
     
+        .list-title.strategy {
+
+                    text-align: left;
+
+                }
         
 }
 
@@ -572,10 +605,12 @@ button{
      .manifestos-list {
             flex-wrap: nowrap;
             gap: 24px;
-            gap: 24px;
         }
+                .manifestos-item {
+                    flex-basis: calc((100% - 72px) / 4);
+                }
 
-    .list-title {  
+    .list-title.strategy {  
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -610,6 +645,18 @@ button{
     padding: 32px 0;
     text-align: center;
 }
+
+.list-title.team-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+
 
 .list-text.team-text {
     text-align: center;
@@ -993,6 +1040,8 @@ button{
     .footer-wrapper {
             align-items: baseline;
             flex-wrap: nowrap;
+            gap: unset;
+            margin-left: 0;
         }
 
     .footer-logo-wrapper {
