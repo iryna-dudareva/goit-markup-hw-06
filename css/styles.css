@@ -158,6 +158,11 @@ button{
 }
 
 @media screen and (min-width: 768px) {
+        .header{
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
         .header-btn {
             display: none;
         }
